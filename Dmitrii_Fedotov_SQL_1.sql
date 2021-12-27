@@ -14,7 +14,7 @@ select name, email from students;
 select id, name, email, created_on from students;
 -- 8. ¬ывести пользователей где password 12333
 select * from students 
-where password='12333';
+where password= '12333';
 -- 9. ¬ывести пользователей которые были созданы 2021-03-26 00:00:00
 select * from students
 where created_on = '2021-03-26 00:00:00';
@@ -53,19 +53,19 @@ select * from students s
 where id < '130';
 -- 21. ¬ывести пользовател€ у которых id меньше 127 или больше 188
 select * from students s 
-where id < '127' or id > '188';
+where id < 127 or id > 188;
 -- 22. ¬ывести пользовател€ у которых id меньше либо равно 137
 select * from students s 
-where id <= '137';
+where id <= 137;
 -- 23. ¬ывести пользовател€ у которых id больше либо равно 137
 select * from students s 
-where id >= '137';
+where id >= 137;
 -- 24. ¬ывести пользовател€ у которых id больше 180 но меньше 190
 select * from students s 
 where id > '180' and id < '190';
 -- 25. ¬ывести пользовател€ у которых id между 180 и 190
 select * from students s 
-where id between '180' and '190';
+where id between 180 and 190;
 -- 26. ¬ывести пользователей где password равен 12333, 1m313, 123313
 select * from students s 
 where password in ('12333', '1m313', '123313');
